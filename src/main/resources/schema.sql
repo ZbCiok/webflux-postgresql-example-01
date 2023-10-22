@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS organization (id SERIAL PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), published BOOLEAN);
