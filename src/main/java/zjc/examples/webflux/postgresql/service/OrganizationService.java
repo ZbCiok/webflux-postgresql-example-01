@@ -53,7 +53,7 @@ public class OrganizationService {
     return organizationRepository.deleteAll();
   }
 
-  public Flux<Organization> findByPublished(boolean isPublished) {
-    return organizationRepository.findByPublished(isPublished);
+  public Flux<Organization> findByStatus(boolean isStatus) {
+    return organizationRepository.findByStatus(isStatus);
   }
 }

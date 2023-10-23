@@ -11,16 +11,16 @@ public class Organization {
 
   private String description;
 
-  private boolean published;
+  private boolean status;
 
   public Organization() {
 
   }
 
-  public Organization(String name, String description, boolean published) {
+  public Organization(String name, String description, boolean status) {
     this.name = name;
     this.description = description;
-    this.published = published;
+    this.status = status;
   }
 
   public void setId(int id) {
@@ -47,17 +47,17 @@ public class Organization {
     this.description = description;
   }
 
-  public boolean getPublished() {
-    return published;
+  public boolean getStatus() {
+    return status;
   }
 
-  public void setPublished(boolean isPublished) {
-    this.published = isPublished;
+  public void setStatus(boolean isStatus) {
+    this.status = isStatus;
   }
 
   @Override
   public String toString() {
-    return "Organization [id=" + id + ", name=" + name + ", desc=" + description + ", published=" + published + "]";
+    return "Organization [id=" + id + ", name=" + name + ", desc=" + description + ", status=" + status + "]";
   }
 
 }

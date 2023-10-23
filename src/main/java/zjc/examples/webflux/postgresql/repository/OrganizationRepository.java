@@ -11,5 +11,5 @@ import reactor.core.publisher.Flux;
 public interface OrganizationRepository extends R2dbcRepository<Organization, Integer>{
   Flux<Organization> findByNameContaining(String name);
   
-  Flux<Organization> findByPublished(boolean isPublished);
+  Flux<Organization> findByStatus(boolean isStatus);
 }

@@ -66,9 +66,9 @@ public class OrganizationController {
     return organizationService.deleteAll();
   }
 
-  @GetMapping("/organizations/published")
+  @GetMapping("/organizations/status")
   @ResponseStatus(HttpStatus.OK)
-  public Flux<Organization> findByPublished() {
-    return organizationService.findByPublished(true);
+  public Flux<Organization> findByStatus() {
+    return organizationService.findByStatus(true);
   }
 }
