@@ -1,4 +1,4 @@
-package com.bezkoder.spring.r2dbc.postgresql;
+package zjc.examples.webflux.postgresql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,7 +27,7 @@ public class WebFluxPostgresqlExampleApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(com.bezkoder.spring.r2dbc.postgresql.WebFluxPostgresqlExampleApplication.class, args);
+    SpringApplication.run(zjc.examples.webflux.postgresql.WebFluxPostgresqlExampleApplication.class, args);
   }
 
 }
